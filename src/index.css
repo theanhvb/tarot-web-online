@@ -1,0 +1,84 @@
+/* Thiết lập nền tối và font chữ */
+.app-container {
+  min-height: 100vh;
+  background: radial-gradient(circle, #1a1a2e 0%, #0f0f1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Khung nội dung chính */
+.tarot-box {
+  background: #252545;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid #3e3e6e;
+}
+
+.title {
+  color: #a855f7;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+/* Ô nhập liệu và nút bấm */
+.tarot-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #16213e;
+  color: white;
+  box-sizing: border-box; /* Quan trọng để không bị tràn khung */
+}
+
+.draw-button {
+  width: 100%;
+  padding: 12px;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.draw-button:hover {
+  background: #9061f9;
+}
+
+/* Khu vực hiển thị kết quả */
+.result-area {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border-left: 4px solid #eab308;
+}
+
+.card-display h2 {
+  color: #fbbf24;
+  font-size: 1.8rem;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.meta-info {
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 2px 0;
+}
+
+.formula {
+  font-size: 10px;
+  color: #64748b;
+  font-style: italic;
+}

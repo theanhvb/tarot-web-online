@@ -1,0 +1,142 @@
+.app-container {
+  min-height: 100vh;
+  background: radial-gradient(circle, #1a1a2e 0%, #020205 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+}
+
+.tarot-card-panel {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 30px;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.main-title {
+  color: #c084fc;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  text-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.tarot-input {
+  width: 100%;
+  padding: 15px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.draw-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.draw-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(124, 58, 237, 0.4);
+}
+
+.result-container {
+  margin-top: 30px;
+}
+
+.analysis-box {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #94a3b8;
+}
+
+.formula {
+  color: #6366f1;
+  font-family: monospace;
+  margin-top: 10px;
+}
+
+.card-reveal {
+  margin-top: 25px;
+  padding: 20px;
+  border: 2px solid #fbbf24;
+  border-radius: 15px;
+  background: rgba(251, 191, 36, 0.05);
+}
+
+.card-name {
+  color: #fbbf24;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.card-meaning {
+  margin-top: 10px;
+  font-style: italic;
+  color: #cbd5e1;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.card-image-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.tarot-img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #fbbf24;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+  transition: transform 0.5s;
+  animation: flipCard 0.8s ease-out;
+}
+
+.card-info {
+  margin-top: 20px;
+}
+
+@keyframes flipCard {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
