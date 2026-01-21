@@ -50,7 +50,7 @@ const getCardImage = (index) => {
           <input 
             type="text"
             className="tarot-input"
-            placeholder="Nhập tên hoặc ngày sinh..."
+            placeholder="Nhập ngày sinh hoặc con số may mắn..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
